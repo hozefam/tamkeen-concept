@@ -1,0 +1,15 @@
+<div class="flex flex-col h-screen bg-gray-100">
+  <div>
+    <tamkeen-header></tamkeen-header>
+  </div>
+  <div class="flex flex-row flex-auto w-full flex-nowrap">
+    <div
+      class="flex justify-center w-24 h-full p-4 bg-gray-200 rounded-tr-lg rounded-br-lg"
+    >
+      <tamkeen-sidebar></tamkeen-sidebar>
+    </div>
+    <div class="w-full h-full">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
