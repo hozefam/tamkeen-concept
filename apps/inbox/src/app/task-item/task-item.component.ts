@@ -1,5 +1,6 @@
 import { Task } from './../task';
 import { Component, Input, OnInit } from '@angular/core';
+import { faUnlock } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'tamkeen-task-item',
@@ -7,9 +8,14 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./task-item.component.css'],
 })
 export class TaskItemComponent implements OnInit {
+  faLockOpen = faUnlock;
+  isBreached: boolean;
+
   @Input() task: Task;
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.isBreached = this.task.deadline <= this.task.date;
+  }
 }

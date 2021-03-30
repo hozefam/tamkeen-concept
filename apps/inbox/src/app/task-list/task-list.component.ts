@@ -31,16 +31,16 @@ export class TaskListComponent implements OnInit {
     },
     {
       title: 'Approve Study for Product Correction of SAU4440',
-      date: new Date(Date.now()),
+      date: new Date(new Date(Date.now()).setMonth(-2)),
       status: 'Ready',
-      deadline: new Date(Date.now()),
-      isSubstituted: false,
+      deadline: new Date(new Date(Date.now()).setMonth(-1)),
+      isSubstituted: true,
     },
     {
       title: 'Preliminary Check of SAU2000',
-      date: new Date(Date.now()),
+      date: new Date(new Date(Date.now()).setMonth(-2)),
       status: 'Ready',
-      deadline: new Date(Date.now()),
+      deadline: new Date(new Date(Date.now()).setMonth(-1)),
       isSubstituted: false,
     },
   ];
