@@ -1,13 +1,11 @@
 <div class="flex flex-row h-full">
-  <div
-    class="flex flex-col flex-none w-3/12 p-4 space-y-3 overflow-auto bg-gray-200"
-  >
+  <div class="flex flex-col flex-none w-2/6 p-2 space-y-2 bg-gray-200">
     <tamkeen-task-item
       *ngFor="let task of tasks"
       [task]="task"
     ></tamkeen-task-item>
   </div>
   <div
-    class="flex flex-col flex-none w-full h-full p-4 space-y-4 bg-gray-100"
+    class="flex flex-col flex-none w-full h-full p-2 space-y-4 bg-gray-100"
   ></div>
 </div>
