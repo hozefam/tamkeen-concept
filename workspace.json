@@ -16,13 +16,8 @@
             "polyfills": "apps/inbox/src/polyfills.ts",
             "tsConfig": "apps/inbox/tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "apps/inbox/src/favicon.ico",
-              "apps/inbox/src/assets"
-            ],
-            "styles": [
-              "apps/inbox/src/styles.css"
-            ],
+            "assets": ["apps/inbox/src/favicon.ico", "apps/inbox/src/assets"],
+            "styles": ["apps/inbox/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -57,20 +52,14 @@
         },
         "serve": {
           "executor": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "inbox:build"
-          },
+          "options": { "browserTarget": "inbox:build" },
           "configurations": {
-            "production": {
-              "browserTarget": "inbox:build:production"
-            }
+            "production": { "browserTarget": "inbox:build:production" }
           }
         },
         "extract-i18n": {
           "executor": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "inbox:build"
-          }
+          "options": { "browserTarget": "inbox:build" }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
@@ -83,9 +72,7 @@
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/inbox"
-          ],
+          "outputs": ["coverage/apps/inbox"],
           "options": {
             "jestConfig": "apps/inbox/jest.config.js",
             "passWithNoTests": true
@@ -106,18 +93,12 @@
             "devServerTarget": "inbox:serve"
           },
           "configurations": {
-            "production": {
-              "devServerTarget": "inbox:serve:production"
-            }
+            "production": { "devServerTarget": "inbox:serve:production" }
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/inbox-e2e/**/*.{js,ts}"
-            ]
-          }
+          "options": { "lintFilePatterns": ["apps/inbox-e2e/**/*.{js,ts}"] }
         }
       }
     },
@@ -138,9 +119,7 @@
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/common"
-          ],
+          "outputs": ["coverage/libs/common"],
           "options": {
             "jestConfig": "libs/common/jest.config.js",
             "passWithNoTests": true
@@ -149,9 +128,7 @@
       }
     }
   },
-  "cli": {
-    "defaultCollection": "@nrwl/angular"
-  },
+  "cli": { "defaultCollection": "@nrwl/angular" },
   "generators": {
     "@nrwl/angular:application": {
       "style": "css",
@@ -164,9 +141,7 @@
       "linter": "eslint",
       "unitTestRunner": "jest"
     },
-    "@nrwl/angular:component": {
-      "style": "css"
-    }
+    "@nrwl/angular:component": { "style": "css" }
   },
   "defaultProject": "inbox"
 }

@@ -9,6 +9,8 @@ import { TaskListComponent } from './task-list/task-list.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TaskItemComponent } from './task-item/task-item.component';
 import { TaskSearchComponent } from './task-search/task-search.component';
+import { TaskDetailComponent } from './task-detail/task-detail.component';
+import { TaskCommentsComponent } from './task-comments/task-comments.component';
 
 const routes: Routes = [{ path: '', component: TaskListComponent }];
 
@@ -20,6 +22,8 @@ const routes: Routes = [{ path: '', component: TaskListComponent }];
     TaskListComponent,
     TaskItemComponent,
     TaskSearchComponent,
+    TaskDetailComponent,
+    TaskCommentsComponent,
   ],
   imports: [
     BrowserModule,
