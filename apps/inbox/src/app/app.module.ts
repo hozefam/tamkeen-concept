@@ -8,6 +8,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { TaskListComponent } from './task-list/task-list.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TaskItemComponent } from './task-item/task-item.component';
+import { TaskSearchComponent } from './task-search/task-search.component';
 
 const routes: Routes = [{ path: '', component: TaskListComponent }];
 
@@ -18,6 +19,7 @@ const routes: Routes = [{ path: '', component: TaskListComponent }];
     SidebarComponent,
     TaskListComponent,
     TaskItemComponent,
+    TaskSearchComponent,
   ],
   imports: [
     BrowserModule,
