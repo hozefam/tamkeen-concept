@@ -6,6 +6,7 @@ import {
   faTasks,
   faArrowLeft,
   faCog,
+  faUsersCog,
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -20,6 +21,7 @@ export class SidebarComponent implements OnInit {
   faTasks = faTasks;
   faArrowLeft = faArrowLeft;
   faCog = faCog;
+  faUsersCog = faUsersCog;
 
   constructor() {}
 
