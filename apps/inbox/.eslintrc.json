@@ -17,7 +17,9 @@
         "@angular-eslint/component-selector": [
           "error",
           { "type": "element", "prefix": "tamkeen", "style": "kebab-case" }
-        ]
+        ],
+        "no-empty-function": "off",
+        "@typescript-eslint/no-empty-function": ["off"]
       }
     },
     {

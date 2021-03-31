@@ -11,7 +11,7 @@ export class TaskListComponent implements OnInit {
     {
       title: 'Preliminary Check of SAU5000',
       date: new Date(Date.now()),
-      status: 'Ready',
+      status: 'Claimed',
       deadline: new Date(Date.now()),
       isSubstituted: false,
     },
