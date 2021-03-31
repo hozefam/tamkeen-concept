@@ -3,15 +3,18 @@
   [class.border-red-500]="!isBreached"
   [class.border-green-500]="isBreached"
 >
-  <p class="pb-1 text-lg text-gray-700">{{ task.title }}</p>
+  <p class="pb-1 text-sm text-gray-700">
+    {{ task.project.code + ' ' + task.project.name }}
+  </p>
+  <p class="pb-1 text-xs text-gray-500">{{ task.title }}</p>
   <div class="flex flex-row items-center justify-center w-full">
     <div class="w-full border border-gray-200"></div>
   </div>
   <div class="flex flex-row items-center justify-between w-full align-middle">
-    <p class="pt-1 text-sm text-gray-500">{{ task.date | date: 'short' }}</p>
+    <p class="pt-1 text-xs text-gray-500">{{ task.date | date: 'short' }}</p>
     <fa-icon
       [icon]="faLockOpen"
-      class="text-sm text-gray-300 cursor-pointer"
+      class="text-xs text-gray-300 cursor-pointer"
       [class.hidden]="task.status === 'Claimed'"
     ></fa-icon>
   </div>
